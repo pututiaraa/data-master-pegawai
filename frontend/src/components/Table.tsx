@@ -36,12 +36,16 @@ export default function PegawaiTable({ data, onEdit, onDelete }: Props) {
                 <td className="border px-3 py-2 space-x-2">
                   <button
                     onClick={() => onEdit(index)}
-                    className="bg-yellow-600 hover:bg-yellow-700 px-3 py-2 rounded text-white fas fa-edit"
-                  />
+                    className="bg-yellow-600 hover:bg-yellow-700 px-3 py-2 rounded text-white text-semibold"
+                  > 
+                  Edit
+                  </button>
                   <button
                     onClick={() => onDelete(index)}
-                    className="bg-red-600 hover:bg-red-700 px-3 py-2 rounded text-white fas fa-trash"
-                  />
+                    className="bg-red-600 hover:bg-red-700 px-3 py-2 rounded text-white text-semibold"
+                  >
+                  Hapus
+                  </button>
                 </td>
               </tr>
             ))
